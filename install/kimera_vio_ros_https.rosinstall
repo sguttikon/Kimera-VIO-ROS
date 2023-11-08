@@ -26,7 +26,7 @@
     # Last tested commit: 6cf597ce9fea3e5eee991e96f42634a558dfab33
 - git:
     local-name: pose_graph_tools
-    uri: https://github.com/MIT-SPARK/pose_graph_tools.git
+    uri: https://github.com/sguttikon/pose_graph_tools.git
     version: master
     # Last tested commit: 9ffe480feeac036cdf43a27c9c11637a382aa628
 - git:
@@ -39,12 +39,12 @@
     version: master
 - git:
     local-name: Kimera-RPGO
-    uri: https://github.com/MIT-SPARK/Kimera-RPGO.git
+    uri: https://github.com/sguttikon/Kimera-RPGO.git
     version: master
     # Last tested commit: d48028de5b27a3cf51bd1cd538e4c54ac568154d
 - git:
     local-name: Kimera-VIO
-    uri: https://github.com/MIT-SPARK/Kimera-VIO.git
+    uri: https://github.com/sguttikon/Kimera-VIO.git
     version: master
     # Last tested commit: 2efbc572940dd56b8c6caf6d159cd7afd390d28e
 - git:
