@@ -35,7 +35,7 @@ RUN apt-get update && apt-get install -y \
     python3-wstool python3-catkin-tools
 
 # Install 
-RUN apt-get install ros-noetic-image-geometry ros-noetic-pcl-ros ros-noetic-cv-bridge
+RUN apt-get update && apt-get install -y ros-noetic-image-geometry ros-noetic-pcl-ros ros-noetic-cv-bridge ros-noetic-rqt-multiplot
 
 # Install Realsense
 RUN apt-get update && apt-get install -y ros-noetic-realsense2-camera ros-noetic-realsense2-description
@@ -70,7 +70,7 @@ RUN mkdir -p $WORKSPACE/src && \
 #     wstool init && \
 #     wstool merge Kimera-VIO-ROS/install/kimera_vio_ros_https.rosinstall -y && \
 #     wstool update
-ADD . $WORKSPACE/src/Kimera-VIO-ROS
+ADD --chown=user:group . $WORKSPACE/src/Kimera-VIO-ROS
 RUN cd $WORKSPACE/src && \
     wstool init && \
     wstool merge Kimera-VIO-ROS/install/kimera_vio_ros_https.rosinstall -y && \
